@@ -7,16 +7,21 @@ pipeline{
 
       def gv
 
-      stage("init") {
+     stages {
+        stage("init") {
             steps {
                 script {
                     gv = load "script.groovy"
                 }
             }
         }
-      stage('Testing the Groovt')
-      {
-            
-            printMsg()
-      }
+        stage("build jar") {
+            steps {
+                script {
+                    printMsg()
+                }
+            }
+        }
+     }  
+
 }
