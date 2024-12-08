@@ -1,4 +1,4 @@
-@Library('jenkins-shared@main') _
+@Library('jenkins-shared@main')
 
 // library('Jenkins-shared@main')
 
