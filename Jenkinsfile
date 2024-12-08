@@ -1,4 +1,4 @@
-@Library('jenkins-shared@main')
+@Library('jenkins-shared@main')_
 
 // library('Jenkins-shared@main')
 
@@ -25,8 +25,7 @@ pipeline{
                printMsg()
             }
         }
-       
-  }
+    }
             
 }
     
