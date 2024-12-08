@@ -1,6 +1,5 @@
 // @Library('jenkins-shared@main')
-
-// library('Jenkins-shared@main')
+library('Jenkins-shared@main')
 
 
 pipeline{
@@ -20,7 +19,7 @@ pipeline{
                echo "Second Stage"
             }
         }
-        stage('call the sgared kibrary'){
+        stage('call the shared kibrary'){
             steps{
                printMsg()
             }
