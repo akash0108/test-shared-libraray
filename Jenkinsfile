@@ -1,27 +1,32 @@
-#!/usr/bin/env groovy
-@Library('jenkins-shared')_
+// @Library('jenkins-shared')_
+
+library('Jenkins-shared@main')
 
 
 pipeline{
-      agent any 
+    agent any
 
-      def gv
 
-     stages {
-        stage("init") {
-            steps {
-                script {
-                    gv = load "script.groovy"
-                }
+    stages{
+        stage('checkout'){
+            steps{
+                echo "First job"
+
             }
         }
-        stage("build jar") {
-            steps {
-                script {
-                    printMsg()
-                }
+        
+        stage('build'){
+            steps{
+               echo "Second Stage"
             }
         }
-     }  
-
+        stage('call the sgared kibrary'){
+            steps{
+               printMsg()
+            }
+        }
+       
+  }
+            
 }
+    
