@@ -28,7 +28,7 @@
 // }
 
 
-@Library('jenkins-shared@main') _
+@Library('Jenkins-shared@main') _
 
 pipeline {
     agent any
