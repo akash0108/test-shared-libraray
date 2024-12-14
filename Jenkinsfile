@@ -22,6 +22,12 @@ pipeline{
                printMsg()
             }
         }
+
+        stage('test the script module'){
+            steps{
+               LinuxCMD()
+            }
+        }
     }
             
 }
