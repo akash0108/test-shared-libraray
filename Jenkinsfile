@@ -25,7 +25,7 @@ pipeline{
 
         stage('test the script module'){
             steps{
-               LinuxCMD()
+               LinuxCMD("Akash Parashar")
             }
         }
     }
