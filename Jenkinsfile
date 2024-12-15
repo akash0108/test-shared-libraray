@@ -3,6 +3,10 @@
 pipeline{
     agent any
 
+    parameters {
+        string(name: 'TestVar', defaultValue: 'Akash parashar', description: 'Value for TestVar')
+    }
+
 
     stages{
         stage('checkout'){
@@ -25,7 +29,7 @@ pipeline{
 
         stage('test the script module'){
             steps{
-               LinuxCMD'Akash Parashar'
+               LinuxCMD(params.TestVar)
             }
         }
     }
