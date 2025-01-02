@@ -1,4 +1,4 @@
-@Library('Jenkins-shared@main') _
+@Library('Jenkins-shared@feature/tf') _
 
 pipeline{
     agent any
@@ -7,32 +7,33 @@ pipeline{
         string(name: 'TestVar', defaultValue: 'Akash parashar', description: 'Value for TestVar')
     }
 
+    LinuxCMD(params.TestVar)
 
-    stages{
-        stage('checkout'){
-            steps{
-                echo "First job"
+    // stages{
+    //     stage('checkout'){
+    //         steps{
+    //             echo "First job"
 
-            }
-        }
+    //         }
+    //     }
         
-        stage('build'){
-            steps{
-               echo "Second Stage"
-            }
-        }
-        stage('call the shared kibrary'){
-            steps{
-               printMsg()
-            }
-        }
+    //     stage('build'){
+    //         steps{
+    //            echo "Second Stage"
+    //         }
+    //     }
+    //     stage('call the shared kibrary'){
+    //         steps{
+    //            printMsg()
+    //         }
+    //     }
 
-        stage('test the script module'){
-            steps{
-               LinuxCMD(params.TestVar)
-            }
-        }
-    }
+    //     stage('test the script module'){
+    //         steps{
+    //            LinuxCMD(params.TestVar)
+    //         }
+    //     }
+    // }
             
 }
 
