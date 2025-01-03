@@ -1,6 +1,8 @@
 @Library('Jenkins-shared@feature/tf') _
 
-TestPipelineSteps()
+TestPipelineSteps(
+    terraformDir: '/tmp'
+)
 
 // pipeline{
 //     agent any
