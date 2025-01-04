@@ -5,7 +5,7 @@
 // )
 
 iacPipeline(
-    tfDir: '/tmp'
+    tfDir: '/tmp',
     secretKey: 'SA_AUTH'
 )
     
