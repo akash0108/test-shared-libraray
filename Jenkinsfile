@@ -1,8 +1,13 @@
 @Library('Jenkins-shared@feature/tf') _
 
-TestPipelineSteps(
-    terraformDir: '/tmp'
-)
+// TestPipelineSteps(
+//     terraformDir: '/tmp'
+// )
+
+iacPipeline{
+    tfDir: '/tmp'
+    secretKey: 'SA_AUTH'
+}
 
 // pipeline{
 //     agent any
