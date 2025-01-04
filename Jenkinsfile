@@ -4,10 +4,12 @@
 //     terraformDir: '/tmp'
 // )
 
-iacPipeline{
+iacPipeline(
     tfDir: '/tmp'
     secretKey: 'SA_AUTH'
-}
+)
+    
+
 
 // pipeline{
 //     agent any
