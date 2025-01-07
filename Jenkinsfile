@@ -14,8 +14,10 @@
 // }
 
 iacPipeline(
-    tfDir : '/tmp',
-    gcp_auth: 'SA_AUTH'
+    config =[
+        tfDir : '/tmp'
+    ],
+    gcp_auth = 'SA_AUTH'
 )
     
 
