@@ -9,12 +9,13 @@
        
 // ])
 
-environment {
-    GOOGLE_APPLICATION_CREDENTIALS = credentials('SA_AUTH')
-}
+// environment {
+//     GOOGLE_APPLICATION_CREDENTIALS = credentials('SA_AUTH')
+// }
 
 iacPipeline(
     tfDir : '/tmp',
+    gcp_auth: 'SA_AUTH'
 )
     
 
