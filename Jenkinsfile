@@ -5,11 +5,13 @@
 // )
 
 
-properties([
-        environment {
-            GOOGLE_APPLICATION_CREDENTIALS = credentials('SA_AUTH')
-        }
-])
+// properties([
+       
+// ])
+
+environment {
+    GOOGLE_APPLICATION_CREDENTIALS = credentials('SA_AUTH')
+}
 
 iacPipeline(
     tfDir : '/tmp',
