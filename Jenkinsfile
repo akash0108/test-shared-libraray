@@ -4,9 +4,15 @@
 //     terraformDir: '/tmp'
 // )
 
+
+properties([
+        environment {
+            GOOGLE_APPLICATION_CREDENTIALS = credentials('SA_AUTH')
+        }
+])
+
 iacPipeline(
     tfDir : '/tmp',
-    secretKey : 'SA_AUTH'
 )
     
 
