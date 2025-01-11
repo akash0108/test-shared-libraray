@@ -9,9 +9,16 @@
        
 // ])
 
+pipeline{
+
+agent any
+
 environment {
-    GOOGLE_APPLICATION_CREDENTIALS = credentials('SA_AUTH')
+GOOGLE_APPLICATION_CREDENTIALS = credentials('SA_AUTH')
+}   
+
 }
+
 
 iacPipeline(
     tfDir : '/tmp',
